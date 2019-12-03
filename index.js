@@ -6,7 +6,7 @@ const path = require('path')
 
 const sqlite = require('sqlite')
 const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), { Promise })
-
+ 
 const port = process.env.PORT || 3000
 
 app.use('/admin', (req, res, next) => {
